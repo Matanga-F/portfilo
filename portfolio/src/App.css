@@ -1,0 +1,848 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  background-image: url(./asserts/img/landing_page.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+/* ===============================
+Landing Page Heading and Navigation.
+============================ */
+
+.heading {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  position: absolute;
+  color: rgb(96, 85, 107);
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+   right: 0; 
+}
+
+.logo h1 {
+  position: fixed;
+}
+
+#navigation{
+  float:right ;
+  padding-top: 0.4em;
+  transition: all .5s ease-in-out;
+}
+
+
+#navigation a:hover {
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 150;
+  letter-spacing: .01em;
+  color: rgba(241, 250, 255, 0.6);
+  border-bottom: 1px solid rgba(205, 235, 243, 0.1);
+}
+#navigation a:active, a:focus{
+  color: rgb(0, 173, 241);
+}
+
+.nav-menu i{
+  position: relative;
+  font-weight: 100;
+  font-size: 35px;
+  float: right;
+  right: 1em;
+  top: .4em;
+  transition: all ease-in-out 1s;
+}
+
+#navigation a {
+  /* display: block; */
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 0.2em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  margin-top: 0.2em;
+  margin-right: 0.2em;
+  transition: 0.4s all;
+}
+#navigation a:last-child {
+ padding-right: 0.5em;
+}
+
+
+
+
+
+/*===================================================
+Head Design
+================================================================= */
+
+.name {
+  height: 300px;
+  padding-top: 10em;
+  text-align: center;
+}
+
+.name h1 {
+  font-weight: 100;
+  font-size: 35px;
+  top:-3em;
+  color: rgb(175, 213, 219);
+}
+.name h4 {
+  letter-spacing: 0.05em;
+  font-weight: 189;
+  font-size: 23px;
+}
+
+.name p {
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 0.5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
+}
+/* =========================================================
+Dotted Menu Navigation.
+============================================================*/
+.menu_nav{
+  position: fixed;
+  margin-top: 50%;
+  margin-left: 87%;
+}
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 3px;
+  margin-top: 0.7em;
+  background-color: rgba(106, 108, 109, 0.6);
+  border-radius: 50%;
+  display: block;
+  transition: background-color 0.5s ease-in-out;
+
+}
+
+ .dot a {
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+.dot:hover {
+  background-color: rgb(180, 175, 175);
+  height: 10px;
+  width: 10px;
+}
+
+.dot:active{
+  background-color: rgba(0, 46, 253,.2);
+  height: 10.5px;
+  width: 10.5px;
+}
+
+/* ==================================================
+
+Design Resume button
+============================================== */
+
+.links {
+  padding-top: 5em;
+  width: 100%;
+}
+
+.links {
+  padding-left: 1em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* justify-content: center; */
+  grid-gap: 0.2em;
+}
+
+.links button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: rgb(211, 241, 248);
+  letter-spacing: 0.2px;
+  border-radius: 10px;
+  margin-left:1em;
+  border: none;
+  padding: 0.5em;
+  width: 80%;
+  margin: auto;
+  padding-left: 0.1em;
+  border: 1px solid white;
+  transition: 0.5s all;
+  text-transform: capitalize;
+}
+
+.links button:hover {
+  border:0.04em solid rgba(0, 215, 253, 0.5);
+  color: rgba(241, 250, 255, 0.6);
+  letter-spacing: 0.1px;
+  width: 82%;
+  margin: auto;
+
+}
+.links button:active {
+  border:0.02em solid rgb(0, 46, 253);
+  color: rgb(202, 247, 247);
+  letter-spacing: 0.03em;
+}
+
+/* =======================================
+About Me design
+=======================================" */
+
+.about {
+  background-color: rgba(14, 12, 12,.9);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.grid_view {
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#about_me h5 {
+  width:80%;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 0.5em;
+  font-weight: 100;
+  font-size: 33px;
+  letter-spacing: 0.1em;
+  top:-3em;
+  color: rgb(175, 213, 219);
+  transition: all 0.5s ease-in-out;
+}
+
+#about_me h5 {
+  border-bottom: 1px solid rgba(247, 254, 255, 0.5);;
+}
+
+#about_me p {
+  width: 75%;
+  /* margin: auto; */
+  margin-left: 3em;
+  text-align: justify;
+  line-height: 1.1em;
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 0.5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 1.5em;
+  z-index: 1;
+  color: rgb(255, 254, 254);
+}
+
+.icon {
+  margin-left: 5.5em;
+}
+
+.icon .fa {
+  position:static;
+  padding: .5em;
+  font-size: 30px;
+  border-radius: 10%;
+  color: rgb(130, 143, 145);;
+  cursor: pointer;
+  transition: 0.5s all;
+  z-index: 1;
+}
+.fa:hover {
+  color: rgba(248, 249, 250, 0.6);
+  font-size: 32px;
+  background: transparent;
+
+}
+
+.icon .fa:active {
+  color: rgb(202, 247, 247);
+}
+
+/* *************************************************
+SKilss Design
+************************************************************ */
+
+.skills {
+  height: 600px;
+  background-image:  url(./asserts/img/skill2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skill {
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.skill h2 {
+  width:80%;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 0.5em;
+  font-weight: 100;
+  font-size: 33px;
+  letter-spacing: 0.1em;
+  top:-3em;
+  color: rgb(175, 213, 219);
+  transition: all 0.5s ease-in-out;
+}
+
+.skill h2 {
+  border-bottom: 1px solid rgba(247, 254, 255, 0.5);;
+}
+
+
+.grid_skills {
+  width: 90%;
+  margin: auto;
+  margin-left: 2.5em;
+  justify-content: center;
+}
+
+.grid_skills div {
+  margin-left: 1em;
+  padding-top: 1em;
+}
+
+
+
+.grid_skills h6 {
+  font-size: 20px;
+  margin-left:4.5em;
+  padding-bottom: .3em;
+}
+
+.grid_skills button {
+  padding-top: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: rgb(211, 241, 248);
+  letter-spacing: 0.2px;
+  border-radius: 10px;
+  margin-left:1em;
+  border: none;
+  padding: 0.5em;
+  padding-left: 0.1em;
+  width: 80%;
+  margin: auto;
+  border: 1px solid white;
+  transition: 0.5s all;
+  text-transform: capitalize;
+}
+
+
+.grid_skills button:hover {
+  border:0.04em solid rgba(0, 215, 253, 0.5);
+  color: rgba(241, 250, 255, 0.6);
+  letter-spacing: 0.1px;
+  width: 79%;
+  margin: auto;
+}
+.grid_skills button:active {
+  border:0.02em solid rgb(0, 46, 253);
+  color: rgb(202, 247, 247);
+  letter-spacing: 0.03em;
+}
+
+
+
+/* ====================================================================
+PROJECT DESIGN
+======================================================================== */
+
+.projects {
+  height: 150px;
+  background-color: black;
+  text-align: center;
+}
+
+.project_grid h5 {
+  width:80%;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 0.5em;
+  font-weight: 100;
+  font-size: 33px;
+  letter-spacing: 0.1em;
+  top:-3em;
+  color: rgb(175, 213, 219);
+  transition: all 0.5s ease-in-out;
+}
+
+.project_grid h5 {
+  border-bottom: 1px solid rgba(247, 254, 255, 0.5);;
+}
+
+/* ==================================================
+CONTACT DESIGN
+===================================================== */
+
+.contact {
+  height: 610px;
+  background-color: rgba(14, 12, 12,.9);
+  color: white;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: 1px solid rgba(126, 125, 125, 0.2);
+  padding-bottom: 2em;
+}
+
+#contact {
+  padding-top: 1em;
+  padding-left: .5em;
+}
+.enquries{
+  width: 50%;
+  background-color: rgba(70, 67, 67, 0.9);
+  
+}
+
+.head h5 {
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 0.5em;
+  font-weight: 100;
+  font-size: 30px;
+  top:-3em;
+  color: rgb(175, 213, 219);
+}
+
+.head h2 {
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 0.5em;
+  font-weight: 100;
+  font-size: 30px;
+  top:-3em;
+  color: rgb(175, 213, 219);
+}
+
+
+.form {
+  padding-top: 1em;
+  width: 85%;
+  margin: auto;
+  border-top: 0.01em solid rgba(247, 254, 255, 0.5);
+  border-bottom: 1px solid rgba(247, 254, 255, 0.5);
+  text-align: center;
+  padding-bottom: 1em;
+}
+.form label {
+  margin-bottom: 1em;
+}
+.form  input, textarea {
+  width: 95%;
+  background-color: transparent;
+  outline: none;
+  color:rgb(175, 213, 219);
+  height: 3em;
+  font-size: 15px;
+  border: none;
+}
+
+
+.form  input, textarea {
+  margin-top: .4em; 
+  border: 0.02em solid white;
+  border-radius: 6px;
+  transition: 0.5s all;
+  padding-left: .5em;
+}
+.form input:hover, textarea:hover {
+  width: 97%;
+  cursor: pointer;
+  border:0.04em solid rgba(0, 215, 253, 0.5);
+  color: rgba(241, 250, 255, 0.6);
+}
+
+.form input:active, textarea:active {
+  width: 98%;
+  cursor: pointer;
+  border:0.04em solid rgba(0, 118, 253, 0.5);
+  color: rgba(241, 250, 255, 0.6);
+}
+.form textarea {
+  height: 2%;
+}
+
+.form button {
+  margin-top: 1em;
+  background-color: rgba(0, 118, 253, 0.5);
+  outline: none;
+  cursor: pointer;
+  color: rgb(211, 241, 248);
+  letter-spacing: 0.2px;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+  padding-left: 0.1em;
+  width: 80%;
+  border: 1px solid white;
+  transition: 0.5s all;
+  text-transform: capitalize;
+
+}
+
+.form button:hover {
+  border:0.04em solid rgba(249, 250, 250, 0.5);
+  background-color: rgb(0, 68, 255);
+  color: rgba(241, 250, 255, 0.6);
+  letter-spacing: 0.1px;
+  width: 81%;
+
+}
+.form button:active {
+  border:0.02em solid rgb(0, 46, 253);
+  background-color: rgb(6, 1, 48);
+  color: rgb(202, 247, 247);
+  letter-spacing: 0.03em;
+}
+#contact .info{
+  margin-top: .4em;
+  margin-left: 2em;
+}
+#contact .info p{
+  transition: all ease-in-out .5s;
+}
+#contact .info p:hover {
+  color: rgba(241, 250, 255, 0.6);
+  cursor: pointer;
+}
+
+#contact i {
+  padding:0.2em;
+  color: rgba(212, 226, 241, 0.5);
+}
+
+
+/*=========================================================
+Footer Design
+============================================================= */
+
+.footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;;
+}
+
+
+.footer .first {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.footer .first h5 {
+  width: 55%;
+  margin: auto;
+  font-weight: 100;
+  font-size: 25px;
+  padding-left: 0.2px;
+  padding-right: 0.01em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer .first p {
+  text-transform: capitalize;
+  font-size: 16px;
+  padding-bottom: 0.5em;
+}
+
+.footer .icon{
+  width: 40%;
+  margin: auto;
+  border-top: 0.01em solid rgba(247, 254, 255, 0.5);
+  border-bottom: 1px solid rgba(247, 254, 255, 0.5);
+  padding-top: 0.5em;
+  margin-left: 6em;
+}
+
+.footer .icon .fa {
+  padding-left: 6.5em;
+}
+
+.footer .icon .fa {
+  position:static;
+  padding: .3em;
+  font-size: 25px;
+  border-radius: 9%;
+  color: rgb(130, 143, 145);;
+  cursor: pointer;
+  transition: 0.5s all;
+  z-index: 1;
+}
+.footer .icon .fa:hover {
+  color: rgba(93, 93, 94, 0.6);
+  font-size: 25px;
+  background: transparent;
+
+}
+
+.footer .icon .icon .fa:active {
+  color: rgb(202, 247, 247);
+}
+.footer .copy {
+  padding-top: 1em;
+  text-transform: capitalize;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer button {
+  background-color: transparent;
+  color: white;
+  width: 25px
+
+}
+
+.footer .up .fa:hover {
+  color: white;
+  width: 20px
+}
+
+/* /**************************************************************
+BOX Shandow
+**************************************************** */
+
+.about, .contact, .projects, .skills, .footer {
+  box-shadow: 0px 0px 20px 0px rgba(187, 186, 186, 0.5);
+}
+
+/* *****************************************************************
+*********************************************************************
+Mobile Responsive Layouts
+*********************************************************************
+**********************************************************************/
+
+@media screen and (max-width: 899px) {
+  .side_navigation{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    max-width: 100%;
+    transition: all 3s ease-in-out;
+  }
+  .main {
+    position: relative;
+    max-width: 55%;
+  }
+  #navigation {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+  }
+  #navigation {
+    opacity: 0;
+  }
+
+  .main_grid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+
+
+  .side_navigation {
+    height: 100vh;
+    width: 75%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+
+  }
+
+  .side_navigation .side_design {
+    height: inherit;
+    width: 25%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .side_design #navigation{
+    opacity: .5;
+    transition: all 1s ease-in-out;
+  }
+
+  .side_navigation .copy {
+    font-family: 'Times New Roman', Times, serif;;
+  }
+
+  #navigations {
+    height: 70vh;
+    margin-top: 5em;
+    transition: all .5s ease-in-out;
+  }
+  #navigations a {
+    font-size: 20px;
+    margin-left: 1.5em;
+    padding-top: 1em;
+    display: block;
+    z-index: 1;
+    color: white;
+  }
+  #navigations a .font_awesome {
+    font-size: 20px;
+    margin-right: .7em;
+    transition: all .5s ease-in-out;
+  }
+
+  #navigations a:hover .font_awesome{
+    color: rgb(0, 68, 255);
+  }
+
+  #navigations a:active .font_awesome{
+    color: blue;
+  }
+  
+
+  
+  
+  #navigations a:hover {
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+    letter-spacing: .01em;
+    color: rgba(241, 250, 255, 0.6);
+  }
+  #navigations a:active, a:focus{
+    color: rgb(0, 56, 241);
+  }
+  
+  .nav-menu i{
+    position: relative;
+    font-weight: 100;
+    font-size: 35px;
+    float: right;
+    right: 1em;
+    top: .4em;
+    transition: all ease-in-out 1s;
+  }
+  
+  #navigations a {
+    /* display: block; */
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 0.2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+    transition: 0.4s all;
+  }
+  #navigation a:last-child {
+   padding-right: 0.5em;
+  }
+  /* ******************************************************************
+  Resume Buttin Design
+  ********************************************************************* */
+  .links {
+    padding-left: 3em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* justify-content: center; */
+    grid-gap: 0.2em;
+  }
+
+  /* *******************************************************************
+
+  Skill Design
+  ********************************************************************** */
+  .skills {
+    height: 500px;
+  }
+  .grid_skills {
+    display: block;
+    width: 100%;
+    transition: all 1s ease-in-out;
+  }
+
+  .grid_skills {
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    /* justify-content: center; */
+    grid-gap: 1em;
+  }
+  .grid_skills h6 {
+    font-size: 24px;
+    margin-left: 4em;
+    padding-bottom: .3em;
+  }
+  .grid_skills button{
+    width: 95%;
+    margin: auto;
+  }
+  .grid_skills button:hover  {
+    width: 97%;
+    margin: auto
+  }
+  /* ******************************
+  Footer Design
+  ********************************** */
+
+  .footer .copy{
+    opacity: 1;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+  }
+  .footer .copy{
+    opacity: 0;
+  }
+
+
+  .side_navigation .copy {
+    margin-top: 100em;
+  }
+
+  .side_navigation #first {
+    margin: auto;
+    font-weight: 100;
+    font-size: 20px;
+    padding-left: 0.2px;
+    padding-right: 0.01em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .side_navigation  #first p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-bottom: 0.5em;
+  }
+}
