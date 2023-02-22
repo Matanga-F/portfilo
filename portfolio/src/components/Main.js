@@ -3,9 +3,13 @@ import CurrentYear from './CurrentYear'
 import Dot from './Dot'
 import {AiOutlineMail, AiOutlineCodepenCircle} from "react-icons/ai"
 import {GrPhone} from "react-icons/gr"
-import {TfiHome} from "react-icons/tfi"
+import {TfiHome, TfiArrowUp} from "react-icons/tfi"
 import {BsGithub, BsLinkedin, BsHddStack} from "react-icons/bs"
 import {BiUser} from "react-icons/bi" 
+import {ImCodepen} from 'react-icons/im'
+import  {SlSocialLinkedin} from 'react-icons/sl'
+import  {FiGithub} from 'react-icons/fi'
+import {AiOutlineMenu, AiOutlineArrowUp} from "react-icons/ai";
 import {VscCode} from "react-icons/vsc"
 
 const Main = () => {
@@ -16,9 +20,16 @@ const Main = () => {
                 <div class="side_navigation">
                     <div class="side_design">
                          <div class="profile">
+                            <div class="profiles">
                             <h4>Fulufhelo Matanga</h4>
+                            <div className= "awesome" id = 'icons'>
+                            <FiGithub className= "icons"/>
+                            <SlSocialLinkedin className= "icons"/>
+                            <ImCodepen className= "icons"/>
+                        </div>
+                            </div>
                            
-                         </div>
+                         
                          <div class="nav" id="navigations">
                                 <a href="#home"><TfiHome  class="font_awesome" />Home</a>
                                 <a href="#about"><BiUser class="font_awesome" />About</a>
@@ -30,17 +41,18 @@ const Main = () => {
                                 <p>All rights reserved. fulufhelo matanga</p>
                                 <CurrentYear />
                             </div>
+                        </div>
                     </div>
                     
                 </div>
             <div class="main_navigation">
-            <section class="heading">
+            <section class="heading" id="home">
             <div class="head">
                 <div id="head">
                     <div class="logo">
                         <h1>V</h1>
                     </div>
-                    <span class="nav-menu"><i class="bi bi-list"></i></span>
+                    <AiOutlineMenu className='menu'/>
                     <div class="nav" id="navigation">
                         <a href="#about"><i class='bx bx-user'>About</i></a>
                         <a href="#skill"><i class="bi bi-hdd-stack">Skills</i></a>
@@ -63,19 +75,26 @@ const Main = () => {
                 </div>
                 <div class="links">
                     <div class="cv">
-                        <button class="resume"  href="resume">Resume</button>
+                        <a href= ''><button class="resume"  href="resume">Resume</button></a>
                     </div>
                     <div>
-                        <button class="resume" href="#project">View Project</button>
+                        <a href='#project'><button class="resume" href="#project">View Project</button></a>
                     </div>
                     <div>
-                        <button class="resume">Send Email</button>
+                        <a href= '#contact' ><button class="resume">Send Email</button></a>
                     </div>
                 </div>
                 <div id="resume"></div>
             </div>
+            <div class="back-to-top">
+                    <div>
+                        <AiOutlineArrowUp className='back-to-top' />
+                    </div>
+                            
+                </div>
         </section>
         <section class="about" id="about">
+                
             <div class="grid_view">
 
                 <div id="about_me">
@@ -84,23 +103,24 @@ const Main = () => {
 
                 <div id="about_me">
 
+
                     <p>I am self driven individual who is passionate
                          in software development, I thrive off problem-solving
                           through programming. I enjoy being challenged and working
                            on projects which require me to work outside my skill and
                             knowledge set to acquire new concepts.</p>
 
-                    <p>I have experience in various programming languages such as
-                         JavaScript, Java, Python and simple web based languages as HTML5,
-                          CSS3 and it's libraries. and also I have few personal projects in 
-                          using frameworks such as React and Django.
+                    <p>I have experience in working with APIs design, Https requests, relational database management systems, full
+stack application development and application deployment using Docker. I have also worked with React and
+Django frameworks and I am proficient in git and github.
                     </p>
-                </div>
-                <div class="icon">
-                    <i class="fa fa-github-square" aria-hidden="true"></i>
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    {/* <p>I am an enthusiastic and solutions driven individual who is consistently searching for opportunities to learn to
+acquire new skills.</p> */}
+                        <div className= "awesome" id="awesome">
+                            <FiGithub className= "icons"/>
+                            <SlSocialLinkedin className= "icons"/>
+                            <ImCodepen className= "icons"/>
+                        </div>
                 </div>
             </div>
         </section>
@@ -139,7 +159,7 @@ const Main = () => {
         <section class="projects" id="project">
             <div class="project_grid">
                 <h5 >Projects</h5>
-                <div id="project">Coming Soon...</div>
+                <div id="soon">Coming Soon...</div>
             </div>
         </section>
         <section class="contact" id="contact">
@@ -164,10 +184,11 @@ const Main = () => {
         </section>
         <section class="footer">
             <div>
-                <div class="first">
+                {/* <div class="first">
                     <h5>Full Stack Developer</h5>
                     <p>first solve the problem then write the code.</p>
-                </div>
+                </div> */}
+                    
                 <div class="copy" id="first">
                     <p>All rights reserved. fulufhelo matanga</p>
                     <CurrentYear />
