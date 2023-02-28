@@ -86,14 +86,13 @@ const Main = () => {
                 </div>
                 <div id="resume"></div>
             </div>
-            <div class="back-to-top">
-                    <div>
-                        <AiOutlineArrowUp className='back-to-top' />
-                    </div>
-                            
-                </div>
         </section>
         <section class="about" id="about">
+        <div class="back-to-top">
+                    <div>
+                        <a href ="#home" ><AiOutlineArrowUp className='up-arrow' /></a>
+                    </div>          
+                </div>
                 
             <div class="grid_view">
 
